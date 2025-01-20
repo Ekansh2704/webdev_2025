@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            border: 2px solid #007BFF;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .scroll-box {
+            height: 80px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Elements Demo</h1>
+
+    <label for="textbox">Text Box:</label>
+    <input type="text" id="textbox" name="textbox" placeholder="Enter text here" required>
+
+    <fieldset>
+        <legend>Radio Buttons</legend>
+        <label>
+            <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other"> Other
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Check Boxes</legend>
+        <label>
+            <input type="checkbox" name="hobby" value="reading"> Reading
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="sports"> Sports
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="traveling"> Traveling
+        </label>
+    </fieldset>
+
+    <label for="selection">Selection Box:</label>
+    <select id="selection" name="selection" size="3" class="scroll-box">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+
+    <fieldset>
+        <legend>Option Box</legend>
+        <label>
+            <input type="checkbox" name="option" value="yes" checked> I agree
+        </label>
+    </fieldset>
+
+    <label for="textarea">TextArea Box:</label>
+    <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Write something..."></textarea>
+
+    <label for="datalist">Datalist:</label>
+    <input list="options" id="datalist" name="datalist" placeholder="Choose an option">
+    <datalist id="options">
+        <option value="Option A">
+        <option value="Option B">
+        <option value="Option C">
+    </datalist>
+
+    <fieldset>
+        <legend>User Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</body>
+</html>
